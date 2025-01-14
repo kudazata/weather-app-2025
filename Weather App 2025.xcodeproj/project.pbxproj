@@ -149,6 +149,8 @@
 				D12313602D2DC94500AFF0C1 /* SceneDelegate.swift */,
 				D12313672D2DC94700AFF0C1 /* Assets.xcassets */,
 				D12313692D2DC94700AFF0C1 /* LaunchScreen.storyboard */,
+				D145777E2D367E2000E091B2 /* AppConfig.sample.xcconfig */,
+				D145777D2D367DB300E091B2 /* AppConfig.xcconfig */,
 				D123136C2D2DC94700AFF0C1 /* Info.plist */,
 			);
 			path = "Weather App 2025";
@@ -192,8 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				D12BE3B12D3693570028486F /* HelperFunctions */,
-				D145777D2D367DB300E091B2 /* AppConfig.xcconfig */,
-				D145777E2D367E2000E091B2 /* AppConfig.sample.xcconfig */,
 				D145777F2D367E9D00E091B2 /* AppConfig.swift */,
 				D12BE3A32D368BBB0028486F /* Localizable.strings */,
 			);
