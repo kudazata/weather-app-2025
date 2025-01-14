@@ -20,13 +20,13 @@ enum NetworkError: Error {
     var message: String {
         switch self {
         case .badUrl:
-            return "The url that was provided is invalid"
+            return String(localized: "bad_url_message")
         case .decodingError:
-            return "There was an error decoding the data"
+            return String(localized: "decoding_error_message")
         case .badRequest:
-            return "The request that was sent is invalid"
+            return String(localized: "bad_request_message")
         case .noData:
-            return "There was no data returned from the server"
+            return String(localized: "no_data_message")
         case .backendError(let error):
             return error.message
         case .customError(let error):

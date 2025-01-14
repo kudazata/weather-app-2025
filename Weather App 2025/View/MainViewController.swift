@@ -67,7 +67,7 @@ class MainViewController: UIViewController {
     func displayForecastWeather() {
         let controller = UIHostingController(rootView: ForecastListView(forecastWeatherItems: viewModel.forecastWeather.value))
         if let listView = controller.view {
-            self.forecastListView = listView
+            forecastListView = listView
             view.addSubview(forecastListView)
             forecastListView.translatesAutoresizingMaskIntoConstraints = false
             listView.backgroundColor = .clear
@@ -94,7 +94,7 @@ class MainViewController: UIViewController {
         
         viewModel.error.sink { [weak self] error in
             guard let error = error else { return }
-            self?.showRetryAlert(title: "Error", message: error.message, completion: {
+            self?.showRetryAlert(title: String(localized: "error_title"), message: error.message, completion: {
                 self?.viewModel.getCurrentWeather()
                 self?.viewModel.getForecastWeather()
             })

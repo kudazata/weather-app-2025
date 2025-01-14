@@ -15,7 +15,7 @@ extension MainViewController: CLLocationManagerDelegate {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         case .restricted, .denied:
-            showGeneralAlert(title: "Location permission required", message: "In order to display your weather info, this app needs access to your location. Please enable this in your device's Settings", completion: nil)
+            showGeneralAlert(title: String(localized: "location_permission_required_title"), message: String(localized: "location_permission_required_message"), completion: nil)
         case .authorizedWhenInUse, .authorizedAlways:
             locationManager.startUpdatingLocation()
         default:

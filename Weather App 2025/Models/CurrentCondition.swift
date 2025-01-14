@@ -15,11 +15,11 @@ enum CurrentCondition: String, Decodable {
     var displayName: String {
         switch self {
         case .cloudy:
-            "CLOUDY"
+            String(localized: "cloudy")
         case .rainy:
-            "RAINY"
+            String(localized: "rainy")
         case .clear:
-            "SUNNY"
+            String(localized: "sunny")
         }
     }
     

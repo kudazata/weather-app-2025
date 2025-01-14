@@ -1,0 +1,8 @@
+//
+//  AppConfig.sample.xcconfig
+//  Weather App 2025
+//
+//  Created by Kuda Zata on 14/1/2025.
+//
+
+APP_ID = <YOUR_APP_ID>

@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  Weather App 2025
+
+  Created by Kuda Zata on 14/1/2025.
+  
+*/
+
+"bad_url_message" = "The url that was provided is invalid";
+"decoding_error_message" = "There was an error decoding the data";
+"bad_request_message" = "The request that was sent is invalid";
+"no_data_message" = "There was no data returned from the server";
+"retry_button_title" = "Retry";
+"cancel_button_title" = "Cancel";
+"ok_button_title" = "OK";
+"error_title" = "Error";
+"location_permission_required_title" = "Location permission required";
+"location_permission_required_message" = "In order to display your weather info, this app needs access to your location. Please enable this in your device's Settings";
+"min" = "min";
+"current" = "Current";
+"max" = "max";
+"cloudy" = "CLOUDY";
+"rainy" = "RAINY";
+"sunny" = "SUNNY";

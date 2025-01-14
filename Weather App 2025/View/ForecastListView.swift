@@ -10,7 +10,6 @@ import SwiftUI
 struct ForecastListView: View {
     
     @State var forecastWeatherItems: [ForecastWeatherItem]
-    @State private var startAnimation = false
     
     var body: some View {
         List(forecastWeatherItems, id: \.dt) { item in
@@ -25,7 +24,7 @@ struct ForecastListView: View {
                         .foregroundStyle(Color.white)
                         .tracking(2)
                 }
-                Image( item.weather[0].main.imageName, bundle: nil)
+                Image(item.weather[0].main.imageName, bundle: nil)
                     .resizable()
                     .frame(width: 30, height: 30, alignment: .center)
                     .aspectRatio(contentMode: .fit)

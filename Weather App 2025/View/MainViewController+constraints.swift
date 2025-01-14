@@ -23,9 +23,9 @@ extension MainViewController {
         view.addSubview(maxTempLabel)
         view.addSubview(maxTempTitleLabel)
         view.addSubview(dividerView)
-        minTempTitleLabel.text = "min"
-        currentTempTitleLabel.text = "Current"
-        maxTempTitleLabel.text = "max"
+        minTempTitleLabel.text = String(localized: "min")
+        currentTempTitleLabel.text = String(localized: "current")
+        maxTempTitleLabel.text = String(localized: "max")
         minTempTitleLabel.addSpacing(value: 2)
         currentTempTitleLabel.addSpacing(value: 2)
         maxTempTitleLabel.addSpacing(value: 2)
