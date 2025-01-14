@@ -24,10 +24,12 @@ struct ForecastListView: View {
                         .foregroundStyle(Color.white)
                         .tracking(2)
                 }
-                Image(item.weather[0].main.imageName, bundle: nil)
-                    .resizable()
-                    .frame(width: 30, height: 30, alignment: .center)
-                    .aspectRatio(contentMode: .fit)
+                if item.weather.count > 0 {
+                    Image(item.weather[0].main.imageName, bundle: nil)
+                        .resizable()
+                        .frame(width: 30, height: 30, alignment: .center)
+                        .aspectRatio(contentMode: .fit)
+                }
             }
             .listRowBackground(Color.clear)
             .listRowSeparator(.hidden)
