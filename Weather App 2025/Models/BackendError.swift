@@ -8,6 +8,6 @@
 import Foundation
 
 struct BackendError: Decodable {
-    let cod: String
+    let cod: Int
     let message: String
 }
